@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            margin:0;
+            padding:0;
+        } */
+        .box {
+            width: 450px;
+            border: 1px solid black;
+            border-radius: 14px;
+            padding: 10px;
+            display: flex;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+            border-radius: 14px;
+        }
+
+        .btn {
+            margin: 5px;
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        .btn4 {
+            display: block;
+            margin: 5px;
+            width: 130px;
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid black;
+            font-size: 22px;
+
+        }
+
+        .by {
+            width: 130px;
+            position: relative;
+        }
+
+        .s1 {
+            position: absolute;
+            right: 0;
+            top: 3px;
+        }
+
+        .s2 {
+            position: absolute;
+            left: 8px;
+            top: 3px;
+        }
+
+        .bn1 {
+            /* position:absolute;
+       top:1px;
+       left:190px; */
+            width: 350px;
+            height: 40px;
+            border-radius: 10px;
+            color: white;
+            background-color: black;
+            font-size: 20px;
+        }
+
+        .main {
+            margin: 5px auto;
+            width: 1200px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .rt {
+            font-size: 20px;
+            width: 1100px;
+            margin: 30px auto;
+        }
+
+        @media(max-width:1100px) {
+            .main {
+                margin: 5px auto;
+                width: 85vw;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                vertical-align: middle;
+            }
+
+            .box {
+                width: 80vw;
+                border: 1px solid black;
+                border-radius: 14px;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+            }
+
+            .rt {
+                font-size: 20px;
+                width: 90vw;
+                margin: 5px auto;
+
+            }
+
+            .bn1 {
+                width: 70vw;
+                height: 40px;
+                border-radius: 10px;
+                color: white;
+                background-color: black;
+                font-size: 20px;
+            }
+
+            .box1 {
+                margin: 3px auto;
+            }
+
+            .p1 {
+                text-align: justify;
+            }
+
+            .btn4 {
+                display: block;
+
+                width: 130px;
+                height: 40px;
+                border-radius: 10px;
+                border: 1px solid black;
+                font-size: 22px;
+
+            }
+
+            .bo {
+                margin: auto;
+            }
+
+            .btn {
+                margin: 0px;
+            }
+            .bn{
+                display:flex;
+                gap:5px;
+            }
+            .btn {
+            margin:0px;
+            width:80px;
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <img src="Arisalu.jpg" alt="">
+
+        </div>
+        <div class="bo">
+            <div class="box1">
+                <h3>Ariselu / Attirasalu (Ghee)</h3>
+                <p id="p">Rs. 290.00</p>
+                <p>Tax included</p>
+                <p id="siz">size:250gms</p>
+                <div class="bn">
+                    <button class="btn" id="b1" onclick="pri(290,'250gms', this)">250gms</button>
+                    <button class="btn" id="b2" onclick="pri(580,'500gms', this)">500gms</button>
+                    <button class="btn" id="b3" onclick="pri(1160,'1kg' ,this)">1kg</button>
+                </div>
+                <p>Quantity</p>
+                <div class="by">
+                    <button class="btn4" id="bv">1</button>
+                    <svg class="s1" onclick="clic()" xmlns="http://www.w3.org/2000/svg" width="40" height="35"
+                        fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                        <path
+                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                    </svg>
+                    <svg class="s2" onclick="cli()" xmlns="http://www.w3.org/2000/svg" width="40" height="35"
+                        fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                    </svg>
+
+
+                </div><br>
+                <div class="vb">
+                    <button class="bn1" onclick="bnt1()">Addtocart</button>
+
+                </div>
+                <h3 class="h3" id="haa">Total:- 290.00</h3>
+            </div>
+        </div>
+    </div>
+    <div class="rt">
+        <hr>
+        <h3>Product Description:-</h3>
+        <p class="p1">
+            Ariselu (Traditional sweet made with the finest ingredients - Rice flour, jaggery and pure ghee. These are
+            cherished part of celebrations), also known as Adhirasam /Kajjaya/ Athirasa in some parts of South India. In
+            Andhra and Telengana (Telugu States) these are called Ariselu. In Tamil Nadu they call it as Adhirasam, In
+            Karnataka they call it as Kajjaya. They taste amazing when they are deep fried in Ghee, called as Nethi
+            Ariselu (Ghee Ariselu). This is a Traditional Sweet in Andhra Pradesh and Telangana. This sweet has it's own
+            importance when it comes to festivals and functions like Makara Sankranthi, Deepavali (Diwali), Vinayaka
+            Chavithi, Dusshera and even during engagement functions, weddings and house-warming occations.
+        </p>
+    </div>
+    <script>
+        var cc = 1;
+        var a = 290;
+        function tot() {
+            var tt = a * cc;
+            document.getElementById("haa").innerHTML = `Total:- ${tt}.00`;
+        }
+
+        b1.style.backgroundColor = "yellow";
+        function pri(pr, wg, th) {
+
+            a = pr;
+            var b = wg;
+            document.getElementById("p").innerHTML = `Rs.${a}.00`;
+            document.getElementById("siz").innerHTML = `size:${wg}`;
+            var c = th;
+            var se = document.querySelectorAll("button");
+            for (but of se) {
+                but.style.backgroundColor = '';
+                c.style.backgroundColor = "yellow";
+
+            }
+            tot();
+        }
+
+        function clic() {
+
+            cc = cc + 1;
+            document.getElementById("bv").innerHTML = cc;
+            tot();
+        }
+        function cli() {
+            if (cc > 1) {
+                cc = cc - 1;
+                document.getElementById("bv").innerHTML = cc;
+            }
+            tot();
+        }
+
+    </script>
+
+</body>
+
+</html>
